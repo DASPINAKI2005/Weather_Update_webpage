@@ -5,9 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00, #00ffff, #ff00ff);
+    background-color: #000;
+    /* background: linear-gradient(45deg, #f87676, #00ff00, #0000ff, #ffff00, #00ffff, #ff00ff); */
     background-size: 400% 400%;
-    animation: GradientBackground 09s ease infinite;
+    /* animation: GradientBackground 09s ease infinite; */
 }
 
 @keyframes GradientBackground {
@@ -53,35 +54,41 @@ body {
 }
 
 .weather-card {
-    background-color: rgba(228, 215, 215, 0.95);
+    background: linear-gradient(#08daff, #51f38f);
+    /* background-color: rgba(228, 215, 215, 0.95); */
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: 450px;
+    width: 90%;
+    max-width: 450px;
 }
 
 .weather-card:hover {
     transform: scale(1.05);
-    background-color: #5c788f;
+    background-color: #b6d0e5;
 }
 
 #city-input {
-    padding: 15px;
+    padding:14px 0 14px 5px;
     margin: 10px 0;
-    width: 70%;
+    width: 90%;
     border: 1px solid #530505;
     border-radius: 5px;
     font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #b9babb;
 }
 
 #city-input:focus {
     outline: none;
+    border: none;
     border-color: #2196F3;
 }
 
 #city-input::placeholder {
-    color: #aaa;
+    color: #a08e8e;
 }
 
 #city-input-btn {
@@ -131,14 +138,14 @@ body {
     }
 
     #city-input {
-        width: 100%;
+        width: 96%;
     }
 
     #city-input-btn {
-        width: 100%;
+        width: 50%;
     }
 	#city-input-btn:hover {
-		width: 100%;
+		width: 60%;
 	}
 
     #temperature {
